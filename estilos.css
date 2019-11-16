@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Literata:400,600,700&display=swap');
+
+body {
+    margin: 0 auto;
+    font-family: 'Literata', serif;
+    background-color: bisque;
+}
+
+#date{
+    position: relative;
+    font-weight: 400;
+    font-size: 0.9rem;
+    z-index: 2000;
+    width: 100%;
+}  
+#frase{
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.cont-carta{
+    position: relative;
+    padding-top: 10%;
+    margin-top: 50%;
+    z-index: 0;
+}
+#carta {
+    margin-top: 3rem;
+    float: left;
+}
+
+
+.centrar{
+    position: fixed;
+    left: 50%;
+    width: 120%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    z-index: 5000;
+}
+
+.color {
+    width: 100%;
+    background-color: bisque;
+    z-index: 1000;
+
+}
