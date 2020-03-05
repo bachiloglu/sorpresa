@@ -4,6 +4,7 @@ body {
     margin: 0 auto;
     font-family: 'Literata', serif;
     background-color: bisque;
+    color: #e99a90;
 }
 
 #date{
@@ -29,6 +30,12 @@ body {
     float: left;
 }
 
+span {
+    display: inline-block;
+    /* float:left;  remove */
+    margin: 10px 10px 0 0;
+    padding: 5px 10px
+}
 
 .centrar{
     position: fixed;
@@ -43,5 +50,6 @@ body {
     width: 100%;
     background-color: bisque;
     z-index: 1000;
+    text-align: center;
 
 }

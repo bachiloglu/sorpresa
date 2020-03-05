@@ -1,26 +1,35 @@
 var d = new Date();
-    var dia = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"];
-    var mes = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre",
+    var dias = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"];
+    var meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre",
         "Noviembre", "Diciembre"
     ];
 
     var comoLeDigo = ["bonita", "hermosa", "preciosa", "wachita", "linda", "mi amor", "wawa", "bb"]
-    var dieciocho = d.getDate();
+    var dia = d.getDate();
+    var mes = d.getMonth();
     var horas = [];
     console.log(d.getHours());
     console.log(d.getMonth());
-    console.log(dieciocho);
+    console.log(dia);
 
-    var today = "Hoy es " + dia[d.getDay()] + ' ' + d.getDate() + ' de ' + mes[d.getMonth()] + ' del ' + d
+    var today = "Hoy, en Chile, es " + dias[d.getDay()] + ' ' + d.getDate() + ' de ' + meses[d.getMonth()] + ' del ' + d
     .getFullYear() + '. Son las  ' + d.getHours() + ':' + (d.getMinutes()<10?'0':'') + d.getMinutes() + '.';
     $("#date").append(today);
 
 
    
-    if (dieciocho === 18) {
+    if (dia === 9 && mes === 2 ) {
+        var typed3 = new Typed('#frase', {
+            strings: ["¡Feliz aniversario, bonita!", "¡Feliz aniversario, hermosa!", "¡Feliz aniversario, preciosa!", "¡Feliz aniversario, wachita!", "¡Feliz aniversario, linda!", "¡Feliz aniversario, mi amor!", "¡Feliz aniversario, wawa!", "¡Feliz aniversario, bb!"],
+            typeSpeed: 50,
+            backSpeed: 40,
+            cursorChar: ' ',
+            smartBackspace: true, // this is a default
+            loop: true
+          });
+        
         document.getElementById('videos').innerHTML= "";
-        document.getElementById('frase').innerHTML = "¡Feliz cumpleaños, " + comoLeDigo[Math.floor(Math.random()*comoLeDigo.length)] + '!';
-        document.getElementById('carta').innerHTML = "Amor, ya son 23 añotes. Y llevamos muchos juntos. Qué emoción. <br> Cuando miro pa atrás no me creo que llevemos tanto tiempo juntos ni me creo todo lo que hemos pasado. Han sido los años más bacanes de mi vida y quiero que sigamos viviendo muchas experiencias más juntitosssss. Quiero más viajes, más comidas, que compartamos más lo que nos gusta, que ganemos más en fortnite, que veamos más series y videos y que descubramos el mundo juntitos. <br> Este es tu último cumpleaños antes de un gran paso que vay a dar y eso me tiene muy emocionado y ansioso. Así que monté ésta paginita para escribirte ya que no tenía un papel bonito para hacer una carta. <br>Primero, quiero felicitarte por cumplir un añito más y volverte un poco más vieja y enojona y mañosa. Pero más allá de eso, como lo que viene el próximo año es muy importante para tí y -en segundo plano- para mí, quiero felicitarte también por lo que estai logrando. He sido consciente de cuánto te ha costado y te está costando estar donde estás y por eso quiero hacer hincapié en que sigas siendo así tan esforzada como eres, porque, con el tiempo, te ha traído sólo cosas muy buenas. El viaje a Europa creo, te va a sentar muy bien en el ámbito académico e intelectual, pero quiero que nos sirva pa madurar lo que tenemos aunque siento que ya está en ese proceso. Te felicito de nuevo por tu merecido intercambio, pero el pino que le hai puesto y porque te mereces eso y más. Ojalá y confío en que allá estará todo bien, que serás muy responsable y que te servirá caleta para crecer aún más como persona y como arquitecta. <br>Con relación a eso, quiero escribirte que acá te voy a estar esperando y aunque fuese un año igual lo haría. Estoy y estaré muy mentalizado en terminar esta carrera culia y esperarte para que vivamos la vida de adultos que nos merecemos después de haber esperado todo este tiempo para tenarla. Te amo más que a nada en la Tierra, de verdad eres el amor de mi vida y no quiero perderte jamás. Así que haré todo lo posible para mantener esto vivo a 12,488 km de distancia (según Google). Eres lo más valioso que existe en mi vida y no he conocido nunca a nadie como tú. Eso me hace sentir muy seguro de que quiero pasar todos los años de mi vida con la persona más bonita que existe en el mundo.<br>Cuando se me ocurrió hacerte esto, se me ocurrió también, que quizás y si mis habilidades técnicas me lo permiten, usar esta misma página para que puedas leer y mirar cositas nuestras mientras estás allá. Así que probablemente esto evoluciones con el tiempo, pero esta primera idea me pareció bacán y novedosa. <br>Algunas noches atrás, estaba pensando en qué regalarte algo o alguna sorpresa que fuera entrete pa tí y busqué en los mercados de la internet alguna paleta de Kylie o de James Charles para regalarte, pero las piratas eran muy feas y las originales eran muy caras. Y de verdad tampoco tenía un papel bonito para escribirte con lápiz. Ah!, hablando de lápices, iba a ir a Papelaria a buscar uno de esos que vimos la otra vez, pero se me hacía muy poco pa tanta plata :( jeje. <br>Esta sorpresita es distinta y es sincera y nace desde el corazón. Le puse todos mis conocimientos para que quedara relativamente bien con relación al tiempo que podía meterle y aparte este mensaje está escrito desde antes de tu cumple, entonces también sería como entregarte algo el día que corresponde.<br>Como te dije hace un tiempo, eris lo más importante para mí. He crecido caleta contigo y al lado tuyo y mucho de lo que soy ahora de adulto jóven es gracias a tí. <br>Sé que las cosas no hann estado tan bien, pero pretendo que mejoren de aquí en adelante. Quiero seguir haciendo todo contigo, y seguir siendo felices como lo hemos sido hasta hoy.<br>Ojalá te guste esta pequeña y humilde muestra de amor y compromiso y no olvides nunca, jamás de los jamases, que eres lo que siempre quise tener conmigo. Eres la mejor personas del mundo. Te amo de aquí a la Luna, de la Luna a Plutón, de Plutón a la Tierra y eso multiplicado por la cantidad de kilómetros que puse arriba y eso elevado a la potencia cúbica de todas las kills que hemos hecho en la historia de Fortnite y los goles del PES.<br><strong>Eres un sol. Te amo mucho.</strong>";
+        document.getElementById('carta').innerHTML = "aquí va el texto";
 
     }
 
